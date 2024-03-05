@@ -8,25 +8,47 @@
 
 </head>
 <body>
+    <header class="header">
+        <a href="#" class="logo">MOHAMED BANNOUR</a>
+       
+    <nav class="navbar">
+        
+        <a href="#">Catégorie</a>
+        <a href="#">Profile</a>
+    
+    </nav>
+    </header>
     <div class="container">
+        
+        <!-- <div class="Catégorie">
+            <h2> Catégorie </h2>
+            <input type="text" id="inputcatégorie" placeholder="Add your Catégorie here">
+            <button onclick="addCategorie()">Add</button>
+         </div> -->
+
         <div class="todo-app">
-            <h2>To do list <img src="image/list img.png"></h2>
+            <!-- <h1><img src="images/aqszfd-removebg-preview.png"></h1> -->
+            <h2>To do list <img src="images/list img.png"></h2>
             <div class="row">
                 <input type="text"  id="inputBox" placeholder="Add your task here">
-                <button>Add</button>
+                <button onclick="addTask()">Add</button>
             </div>
-            <ul id="list">
-                <li>Task 1</li>
+            
+           <ul id="list-tasks">
+             <div id ="numbers-of-tasks">
+                 <p id="pending-tasks">you have
+                      <span class="count-task">0</span> task (s)  completed
+                   </p>
+               </div>
+                <!-- <li class="check-task">Task 1</li>
                 <li>Task 2</li>
-                <li>Task 3</li>
+                <li>Task 3</li> -->
             </ul>
+            
+            
         </div>
 
-
-
-
-
-  
+        
     <script src="main.js"></script>
 </div>
 </body>

@@ -1,0 +1,9 @@
+function saveData(){
+    localStorage.setItem("med",listTasks.innerHTML)
+}
+
+ 
+function showTask(){
+    listTasks.innerHTML= localStorage.getItem("med")
+}
+showTask();
